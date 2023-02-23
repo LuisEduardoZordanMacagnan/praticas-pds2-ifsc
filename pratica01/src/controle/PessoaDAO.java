@@ -25,7 +25,6 @@ public class PessoaDAO {
 			stm.setLong(1, 123);
 			stm.setString(2, "Luis");
 			stm.setString(3, "senha");
-
 			stm.executeUpdate();
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -44,6 +43,7 @@ public class PessoaDAO {
 			PreparedStatement stm = c.prepareStatement(query);
 			stm.setString(1, p.getNome());
 			stm.setLong(2, p.getCpf());
+			stm.setString(3, p.getSenha());
 			stm.executeUpdate();
 			return true;
 		} catch (Exception e) {
