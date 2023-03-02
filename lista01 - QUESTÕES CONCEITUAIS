@@ -1,0 +1,9 @@
+1- Biblioteca é a coleção de recursos que podem ser utilizadas de diversas maneiras, facilitando a vida do programador. API é responsável pela interface de comunicação, se for bem construida, pode oferecer uma integração simplificada entre várias plataformas.
+2- MVC é um modelo utilizado por sua otimização e organização, já que o programador consegue se localizar melhor com tal arquitetura. DAO existe para separar a lógica de negócios da lógica de persistência de dados, podendo armazenar informações sem influenciar os outros recursos. Singleton garante que não haja múltiplas instâncias de uma mesma classe, oferecendo a intância ou a criando caso não exista.
+3- JDBC é uma biblioteca que relaciona um banco de dados com um software
+4- CRUD é a inserção de quatro operações básicas de banco de dados (Create, Read, Update, Delete) em um software
+5- Connection: Responsável pela conexão entre o banco de dados e o software
+PreparedStatement: Representa um comando SQL que será executado
+Statement: Usado para executar comando SQL.
+6- Statement, já que o preparedStatement não retorna dados
+7- Swing é a biblioteca java utilizada para criar telas, o Windowbuilder é uma extensão do eclipse que facilita esse processo, não precisando escrever o código para criação de telas
