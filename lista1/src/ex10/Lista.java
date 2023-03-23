@@ -61,9 +61,9 @@ public class Lista extends JFrame {
 		scrollPane.setBounds(10, 21, 414, 229);
 		contentPane.add(scrollPane);
 		
-		listaPessoas = new JTable();
+		listaPessoas = new JTable(modelo);
 		scrollPane.setViewportView(listaPessoas);
-		
+		DefaultTableModel modelo = new DefaultTableModel(new Object[][] {}, new String[] { "ID", "Nome" });
 		listaPessoas.setModel(new DefaultTableModel(
 				new Object[][] {
 				},
@@ -80,7 +80,7 @@ public class Lista extends JFrame {
 		}
 		
 		try {
-			String query = "SELECT nome FROM pessoa;";
+			String query = "SELECT cpf, nome FROM pessoa;";
 			Statement stm = conexao.createStatement();
 			ResultSet rs = stm.executeQuery(query);
 			while(rs.next()) {
